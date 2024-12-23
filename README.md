@@ -29,11 +29,11 @@ Para isso, as implementações do Singleton tem dois passos em comum:
 - Cria um método de criação estático que age como um construtor. Por baixo dos panos, este método chama o construtor privado para criar um objeto e o salva no campo estático. As chamadas posteriores para este método retornam o objeto instânciado.
 
 ### Estrutura
-[[Singleton/structure-en-indexed.png]]
+[[./Singleton/structure-en-indexed.png]]
 Nesta estrutura, a classe Singleton declara o método estático ```getInstance``` que retorna a instância da própria classe. Dessa forma, o construtor deveria estar escondido do código tradicional, sendo o método a única forma de se obter o objeto Singleton.
 
 ### Exemplo de código
-[[Singleton/image.png]]
+[[./Singleton/image.png]]
 Neste exemplo de código em TypeScript (TS), a classe Singleton cria uma instância estática do objeto Singleton, dessa forma, mantém o construtor da classe privado e a obtenção da instância pública, que faz uma condicional em que se a instância não existir, deve criar uma instância nova a partir do construtor. Após definir algumas lógicas para o código, a instância é retornada para a função, em que neste exemplo, é criado duas variáveis para garantir as duas possuam a mesma instância com as mesmas variáveis, retornando no final:
 
 ```Singleton works, both variables contain the same instance.```
