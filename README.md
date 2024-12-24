@@ -79,7 +79,7 @@ Por outro lado, a loja poderia enviar milhares de emails (que podem ser consider
 Portanto, para que tanto o cliente quanto a loja cheguem a um acordo, o Observer sugere que você adicione um mecanismo de inscrição para a classe publicadora, então objetos individuais podem se inscrever ou desincrever de um fluxo de eventos desta publicadora. Portanto, sempre que um evento importante acontece na publicadora, isso vai ser notificado para os inscritos interessados nas publicações.
 
 ### Estrutura
-![a observer structure](Observer/image.png) <br />
+![a observer structure](Observer/structure-indexed.png) <br />
 
 Nesta estrutura:
 1. A publicadora publica os eventos de interesse para outros objetos. Estes eventos ocorrem quando a _publisher_ muda o seu estado ou executa alguns comportamentos. As publicadores contém uma infraestrutura que permite aos novos inscritos a se juntarem e os inscritos atuais deixam a lista de inscrição;
@@ -93,3 +93,11 @@ Nesta estrutura:
 5. Normalmente, os inscritos precisam de algumas informações contextuais para lidar com a atualização corretamente. Por esta razão, as publicadoras passam informações de contexto frequemente como argumentos do método da notificação;
 
 6. O cliente cria os objetos da publicadora e do inscrito separadamente e então registra os inscritos para as atualizações da publicadora.
+
+
+Referências bibliográficas:
+
+Design Patterns. **Refactoring Guru**. Disponível em: <https://refactoring.guru/design-patterns>. Acesso em: 22. de dez. de 2024.
+Singleton. **Refactoring Guru**. Disponível em: <https://refactoring.guru/design-patterns/singleton>. Acesso em: 22. de dez. de 2024.
+Facade. **Refactoring Guru**. Disponível em: <https://refactoring.guru/design-patterns/facade>. Acesso em: 22. de dez. de 2024.
+Observer. **Refactoring Guru**. Disponível em: <https://refactoring.guru/design-patterns/observer>. Acesso em: 22. de dez. de 2024.
